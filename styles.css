@@ -1,0 +1,336 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+    /* Further reduced padding to make it thinner */
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow thickness */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 175px;
+    /* Kept logo size at 175px */
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 200px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    /* White text for contrast */
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Unique colors for each nav item */
+.nav-links li:nth-child(1) a {
+    background-color: #629fef;
+    /* Professional Blue */
+}
+
+.nav-links li:nth-child(2) a {
+    background-color: #f1ba7b;
+    /* Creative Orange */
+}
+
+.nav-links li:nth-child(3) a {
+    background-color: #75de7c;
+    /* Classic Green */
+}
+
+.nav-links li:nth-child(4) a {
+    background-color: #ac7fc9;
+    /* Deep Purple */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.2);
+}
+
+.hero {
+    padding: 120px 20px 60px;
+    background: rgb(220, 228, 233);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 3px;
+    width: 50px;
+    /* Adjust the size */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    /* Enlarges the logo on hover */
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3));
+    /* Adds a 3D shadow effect */
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    width: 250px;
+    /* Reduced width */
+    padding: 15px;
+    /* Reduced padding */
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Unique colors for each theme */
+.feature-box:nth-child(1) {
+    background-color: #E8F0FE;
+    /* Soft blue for "Modern Professional" */
+    color: #1A73E8;
+}
+
+.feature-box:nth-child(2) {
+    background-color: #FEECE2;
+    /* Warm orange for "Creative Flair" */
+    color: #D97706;
+}
+
+.feature-box:nth-child(3) {
+    background-color: #EAF4E6;
+    /* Soft green for "Simple Classic" */
+    color: #1B5E20;
+}
+
+.feature-box img {
+    width: 80px;
+    /* Reduced size */
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.feature-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.feature-box p {
+    font-size: 13px;
+    color: inherit;
+    /* Matches text color to box theme */
+}
+
+/* Hover effect */
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #6200ea;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #3700b3;
+    transform: scale(1.05);
+}
+
+.features {
+    background: #fff;
+    padding: 60px 20px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 12px 24px;
+    border: none;
+    background: #6200ea;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.newsletter button:hover {
+    background: #3700b3;
+}
+
+.top-right {
+    position: absolute;
+    top: 35px;
+    right: 135px;
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-right:hover {
+    background-color: #8a2be2;
+    /* Change to a lighter purple */
+    transform: scale(1.1);
+    /* Slightly increase size */
+}
+
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    /* Adjusts the bottom spacing */
+    right: 20px;
+    /* Adjusts the right spacing */
+    width: 60px;
+    /* Fixed width */
+    height: 60px;
+    /* Fixed height */
+    background: white;
+    border-radius: 50%;
+    /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    /* Prevents overflow */
+}
+
+.chatbot-container img {
+    width: 100%;
+    /* Make image fill the container */
+    height: 100%;
+    object-fit: cover;
+    /* Ensure full fit */
+    border-radius: 50%;
+    /* Crop image to circle */
+}
+
+.chatbot-container:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
